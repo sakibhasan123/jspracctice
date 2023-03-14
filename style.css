@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    background-color: brown;
+    color: whitesmoke;
+}
+h2{
+    text-align: center;
+    background-color: lightcoral;
+    color: whitesmoke;  
+}
+pre{
+    text-align: center;
+    background-color: pink;
+    font-size: 18px;
+    color: whitesmoke;
+}

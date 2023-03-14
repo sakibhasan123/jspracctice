@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Question1. Find the Product.</h1>
+<h2>Answer</h2>
+<pre>
+    const Find_Prod = (array, N) => {
+  let product = 1;
+  for(let i = 0; i < N; i++){
+    product *= array[i];
+  }
+  return product;
+};
+ 
+</pre>
+
+<h1>Question2. Find the Sum.</h1>
+<h2>Answer</h2>
+<pre>
+    const Find_Sum = (array, N) => {
+  let sum = 0;
+  for(let i = 0; i < N; i++){
+    sum += array[i];
+  }
+  return sum;
+};
+ 
+</pre>
+
+<h1>Question3. Count Occurrences</h1>
+<h2>Answer</h2>
+<pre>
+    const findCount = (N, K, Arr) => 
+{
+    let count = 0;
+    for(let  i = 0; i < N; i++){
+      if(Arr[i] === K) count++;
+    }
+    return count;
+};
+ 
+
+</pre>
+
+<h1>Question4. Even Odd</h1>
+<h2>Answer</h2>
+<pre>
+    const findEvenOdd = (N, Arr) => 
+{
+    let even = 0, odd = 0;
+    for(let i = 0; i < N; i++){
+      if(Arr[i]%2) odd+= Arr[i];
+      else even += Arr[i];
+    }
+    return [even, odd];
+};
+ 
+
+</pre>
+
+<h1>Question5. Find whether the number is present or not</h1>
+<h2>Answer</h2>
+<pre>
+    const Find_Num = (array,N,M) => {
+  for(let i = 0; i < N; i++){
+    if(array[i] === M) return 'YES';
+  }
+  return 'NO';
+};
+ 
+
+</pre>
+
+<h1>Question6. Higher Age</h1>
+<h2>Answer</h2>
+<pre>
+    const highAge = (N, Arr) => 
+{
+    return Arr.filter(e => e >= 18);
+};
+ 
+
+</pre>
+
+<h1>Question7. Increment the Array Elements</h1>
+<h2>Answer</h2>
+<pre>
+    const Inc_Arr = (array,N) => 
+{
+  let output = '';
+  array.map(e => output += e + 1 + ' ');
+  console.log(output);
+};
+ 
+</pre>
+
+<h1>Question8. Pass or Fail</h1>
+<h2>Answer</h2>
+<pre>const isAllPass = (N, Arr) => 
+{
+    if(Arr.every(e => e >= 32)) return 'YES';
+    return 'NO';
+};
+ </pre>
+
+<h1>Question9. Unique Color Shirt</h1>
+<h2>Answer</h2>
+<pre>
+    function Unique_Shirts (arr,N) {
+
+ return arr.filter((v) => arr.indexOf(v) === arr.lastIndexOf(v)).length;
+
+  // return unique.length;
+}
+
+</pre>
+
+<h1>Question10. Min and Max</h1>
+<h2>Answer</h2>
+<pre>
+     function arrayMin(arr) {
+  return Math.min(...arr);
+}
+
+function arrayMax(arr) {
+  return Math.max(...arr);
+}
+
+</pre>
+
+<h1>Question11. Birthday Game</h1>
+<h2>Answer</h2>
+<pre>
+    function Birthday_Game(arr,D ,M) {
+  let count = 0;
+  for(let i = 0; i <= arr.length - M; i++){
+    let sum = 0;
+    for(let j = i; j < i + M; j++){
+      sum += arr[j];
+    }
+    if(sum === D) count++;
+  }
+return count;
+}
+
+</pre>
+</body>
+</html>
